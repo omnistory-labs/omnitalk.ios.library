@@ -6,3 +6,6 @@
 //
 
 import Foundation
+import OmnitalkSdk
+
+var version: String { OmniTalk.VERSION }

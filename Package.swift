@@ -14,7 +14,7 @@ let package = Package(
             targets: ["OmnitalkSdkBundle"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/omnistory-labs/omnitalk.ios.webrtc.sdk", branch: "feature/init"),
+        .package(url: "https://github.com/omnistory-labs/omnitalk.ios.webrtc.sdk", branch: "main"),
     ],
     targets: [
         .binaryTarget(name: "OmnitalkSdk", path: "OmnitalkSdk.xcframework"),

@@ -5,7 +5,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/omnistory-labs/omnitalk.ios.webrtc.sdk",
       "state" : {
-        "branch" : "feature/init",
+        "branch" : "main",
         "revision" : "b5f5f63c1e6b4fd809a2f963b8c97b6044350024"
       }
     }
