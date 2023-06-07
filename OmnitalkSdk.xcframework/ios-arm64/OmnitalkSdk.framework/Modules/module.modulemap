@@ -1,0 +1,11 @@
+framework module OmnitalkSdk {
+  umbrella header "OmnitalkSdk.h"
+
+  export *
+  module * { export * }
+}
+
+module OmnitalkSdk.Swift {
+  header "OmnitalkSdk-Swift.h"
+  requires objc
+}
