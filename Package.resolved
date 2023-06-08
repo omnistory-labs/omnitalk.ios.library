@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "omnitalk.ios.webrtc.sdk",
+      "identity" : "omnitalk.ios-webrtc.sdk",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/omnistory-labs/omnitalk.ios.webrtc.sdk",
+      "location" : "https://github.com/omnistory-labs/omnitalk.ios-webrtc.sdk",
       "state" : {
         "branch" : "main",
-        "revision" : "b5f5f63c1e6b4fd809a2f963b8c97b6044350024"
+        "revision" : "ff3aa14f976433f5809372737fdd7a13c5a76ce7"
       }
     }
   ],
