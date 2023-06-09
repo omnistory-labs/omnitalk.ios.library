@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/OmnitalkSdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		TEPa7LJJzW9ErcvCXHLQrIEJV7o=
+		sMazqjHvwlla4cM+R/veVKG0B2w=
 		</data>
 		<key>Modules/OmnitalkSdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Kkm5OodvKJ9ScJsTMzFrb7y9Xqw=
+		IieUnAHXbHrc64FR+6HAiosxhRY=
 		</data>
 		<key>Modules/OmnitalkSdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/OmnitalkSdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Kkm5OodvKJ9ScJsTMzFrb7y9Xqw=
+		IieUnAHXbHrc64FR+6HAiosxhRY=
 		</data>
 		<key>Modules/OmnitalkSdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JR6TA7Q2/bljjhzA/Nw297tWfGY=
+		OCewp9DvMulXUveAzUhJXRfQSNM=
 		</data>
 		<key>Modules/OmnitalkSdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		TEPa7LJJzW9ErcvCXHLQrIEJV7o=
+		sMazqjHvwlla4cM+R/veVKG0B2w=
 		</data>
 		<key>Modules/OmnitalkSdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		0sjdfhx1kMA9sQmcXgWmzdIK7kg=
+		JaQEwwL6HpEFH/7bDdKvqP1BwtY=
 		</data>
 		<key>Modules/OmnitalkSdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/OmnitalkSdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0sjdfhx1kMA9sQmcXgWmzdIK7kg=
+		JaQEwwL6HpEFH/7bDdKvqP1BwtY=
 		</data>
 		<key>Modules/OmnitalkSdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qT3uADH2Tm0wEeNEMK1zhqZMncg=
+		ESRR0mSq+/zWtwlYMIs+H4KPCZ8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			INpU7hTKDHjuvr+uVfM1PyRnru98cBykXWNsiv7S2vk=
+			VTWwnSnTBrdt9bL5qkrAwHLfzUj/9J2K3Y9dTSJU0B8=
 			</data>
 		</dict>
 		<key>Modules/OmnitalkSdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ScURfkV1kO5ZP69BthNdCRxpXN679xtBYe94z7Abdds=
+			sB4RoFdUOvDSiFbazyN3EdkIljuyhpEaOvrTw+dyn3c=
 			</data>
 		</dict>
 		<key>Modules/OmnitalkSdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ScURfkV1kO5ZP69BthNdCRxpXN679xtBYe94z7Abdds=
+			sB4RoFdUOvDSiFbazyN3EdkIljuyhpEaOvrTw+dyn3c=
 			</data>
 		</dict>
 		<key>Modules/OmnitalkSdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LOi96+P9UoFr1UFMTVn0rxiwBqx9SAl60SYM/tabIU8=
+			3ZaxbEL8oJaxKi3tH0cUBhfk+g6lEPaU8TuwTHetbWc=
 			</data>
 		</dict>
 		<key>Modules/OmnitalkSdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			INpU7hTKDHjuvr+uVfM1PyRnru98cBykXWNsiv7S2vk=
+			VTWwnSnTBrdt9bL5qkrAwHLfzUj/9J2K3Y9dTSJU0B8=
 			</data>
 		</dict>
 		<key>Modules/OmnitalkSdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fdv9iFcNvNbSv5z9CIei8Z9c0x3WTV6oKvc6FF0CSGM=
+			nfGYh2e2+duOsyljdF/dAY65zmrHmW+2ZQmRWpZ703E=
 			</data>
 		</dict>
 		<key>Modules/OmnitalkSdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fdv9iFcNvNbSv5z9CIei8Z9c0x3WTV6oKvc6FF0CSGM=
+			nfGYh2e2+duOsyljdF/dAY65zmrHmW+2ZQmRWpZ703E=
 			</data>
 		</dict>
 		<key>Modules/OmnitalkSdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZQh3f9/d1E4Hz6RYDDK+FcGgSCEQEhhzOVJguUxQr6o=
+			U2N/v+bbmPySbX7kCGJkibiuged3twMONEamdSOmqyU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

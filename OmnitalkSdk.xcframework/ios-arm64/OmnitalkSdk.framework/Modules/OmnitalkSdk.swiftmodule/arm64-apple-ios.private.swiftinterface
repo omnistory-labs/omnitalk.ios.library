@@ -71,6 +71,10 @@ public struct OfferCallResult {
   public let roomType: OmnitalkSdk.VIDEOROOM_TYPE
   public let publishIdx: Swift.Int
 }
+public struct VideoMuteResult {
+}
+public struct AudioMuteResult {
+}
 public struct WebRTCVideoView : SwiftUI.UIViewRepresentable {
   public init(view: WebRTC.RTCMTLVideoView)
   @_Concurrency.MainActor(unsafe) public func makeUIView(context: OmnitalkSdk.WebRTCVideoView.Context) -> some UIKit.UIView
@@ -115,7 +119,7 @@ public protocol OmniEventDelegate : AnyObject {
   public func leave(sessionId: Swift.String?) async throws
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func offerCall(callType: OmnitalkSdk.CALL_TYPE, calleeId: Swift.String, record: Swift.Bool, callerView: WebRTC.RTCMTLVideoView?, calleeView: WebRTC.RTCMTLVideoView?) async throws -> OmnitalkSdk.OfferCallResult
+  public func offerCall(callType: OmnitalkSdk.CALL_TYPE, calleeId: Swift.String, record: Swift.Bool?, callerView: WebRTC.RTCMTLVideoView?, calleeView: WebRTC.RTCMTLVideoView?) async throws -> OmnitalkSdk.OfferCallResult
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func answerCall(callerView: WebRTC.RTCMTLVideoView?, calleeView: WebRTC.RTCMTLVideoView?) async throws
@@ -123,8 +127,14 @@ public protocol OmniEventDelegate : AnyObject {
   #if compiler(>=5.3) && $AsyncAwait
   public func answerCall(roomId: Swift.String, roomType: OmnitalkSdk.VIDEOROOM_TYPE, publishIdx: Swift.Int, callerView: WebRTC.RTCMTLVideoView?, calleeView: WebRTC.RTCMTLVideoView?) async throws
   #endif
-  public func setAudioDevice(type: OmnitalkSdk.MIC_TYPE) throws
+  #if compiler(>=5.3) && $AsyncAwait
+  public func setVideoMute(mute: Swift.Bool) async throws -> OmnitalkSdk.VideoMuteResult
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func setAudioMute(mute: Swift.Bool) async throws -> OmnitalkSdk.AudioMuteResult
+  #endif
   public func setVideoDevice(type: OmnitalkSdk.CAM_TYPE) throws
+  public func setAudioDevice(type: OmnitalkSdk.MIC_TYPE) throws
   @objc public func urlSession(_ session: Foundation.URLSession, webSocketTask: Foundation.URLSessionWebSocketTask, didOpenWithProtocol protocol: Swift.String?)
   @objc public func urlSession(_ session: Foundation.URLSession, webSocketTask: Foundation.URLSessionWebSocketTask, didCloseWith closeCode: Foundation.URLSessionWebSocketTask.CloseCode, reason: Foundation.Data?)
   @objc deinit
