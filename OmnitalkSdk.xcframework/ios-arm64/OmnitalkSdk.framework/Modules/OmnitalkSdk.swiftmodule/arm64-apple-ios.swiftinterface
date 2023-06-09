@@ -11,15 +11,6 @@ import SwiftUI
 import WebRTC
 import _Concurrency
 import _StringProcessing
-public struct RoomList {
-  public let count: Swift.Int
-  public let roomList: Swift.Array<OmnitalkSdk.Room>
-}
-public struct ParticipantList {
-  public let roomId: Swift.String
-  public let count: Swift.Int
-  public let partiList: Swift.Array<OmnitalkSdk.Participant>
-}
 public enum OmniEvent {
   public static let LEAVE: Swift.String
   public static let BROADCASTING_EVENT: Swift.String
@@ -35,48 +26,50 @@ public enum OmniEvent {
   public static let REPORT_EVENT: Swift.String
   public static let CONNECTED_EVENT: Swift.String
 }
-public protocol OmniEventDelegate : AnyObject {
-  func onEvent(cmd: Swift.String, message: Swift.Dictionary<Swift.String, Any>)
+public struct CreateSessionResult {
+  public let session: Swift.String
+  public let userId: Swift.String
 }
-@objc public class OmniTalk : ObjectiveC.NSObject, Foundation.URLSessionWebSocketDelegate {
-  public static let VERSION: Swift.String
-  weak public var delegate: (any OmnitalkSdk.OmniEventDelegate)?
-  public init(serviceId: Swift.String, serviceKey: Swift.String)
-  #if compiler(>=5.3) && $AsyncAwait
-  public func createSession(userId: Swift.String?) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public func createRoom(roomType: OmnitalkSdk.VIDEOROOM_TYPE, subject: Swift.String?, secret: Swift.String?) async throws -> Swift.String
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public func joinRoom(roomId: Swift.String, secret: Swift.String?, userName: Swift.String?) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public func roomList(roomType: OmnitalkSdk.VIDEOROOM_TYPE) async throws -> OmnitalkSdk.RoomList
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public func partiList(roomId: Swift.String?) async throws -> OmnitalkSdk.ParticipantList
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public func publish(roomType: OmnitalkSdk.VIDEOROOM_TYPE, view: WebRTC.RTCMTLVideoView?, offerCall: Swift.Bool?) async throws -> Swift.Int
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public func subscribe(publishIdx: Swift.Int, roomType: OmnitalkSdk.VIDEOROOM_TYPE, videoView: WebRTC.RTCMTLVideoView) async throws -> Swift.String
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public func leave(sessionId: Swift.String?) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public func offerCall(roomType: OmnitalkSdk.VIDEOROOM_TYPE, calleeId: Swift.String, record: Swift.Bool, view: WebRTC.RTCMTLVideoView?) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public func answerCall(callerView: WebRTC.RTCMTLVideoView?, calleeView: WebRTC.RTCMTLVideoView?) async throws
-  #endif
-  public func setAudioDevice(type: OmnitalkSdk.MIC_TYPE) throws
-  public func setVideoDevice(type: OmnitalkSdk.CAM_TYPE) throws
-  @objc public func urlSession(_ session: Foundation.URLSession, webSocketTask: Foundation.URLSessionWebSocketTask, didOpenWithProtocol protocol: Swift.String?)
-  @objc public func urlSession(_ session: Foundation.URLSession, webSocketTask: Foundation.URLSessionWebSocketTask, didCloseWith closeCode: Foundation.URLSessionWebSocketTask.CloseCode, reason: Foundation.Data?)
-  @objc deinit
+public struct CreateRoomResult {
+  public let session: Swift.String
+  public let roomId: Swift.String
+}
+public struct RoomListResult {
+  public let session: Swift.String
+  public let count: Swift.Int
+  public let roomList: Swift.Array<OmnitalkSdk.Room>
+}
+public struct JoinRoomResult {
+  public let session: Swift.String
+  public let roomId: Swift.String
+  public let userId: Swift.String
+  public let subject: Swift.String?
+  public let userName: Swift.String
+  public let roomType: OmnitalkSdk.VIDEOROOM_TYPE
+}
+public struct PublishResult {
+  public let session: Swift.String
+  public let roomId: Swift.String
+  public let publishIdx: Swift.Int
+}
+public struct PartiListResult {
+  public let roomId: Swift.String
+  public let count: Swift.Int
+  public let partiList: Swift.Array<OmnitalkSdk.Participant>
+}
+public struct SubscribeResult {
+  public let session: Swift.String
+  public let roomId: Swift.String
+  public let roomType: OmnitalkSdk.VIDEOROOM_TYPE
+  public let publishIdx: Swift.Int
+  public let newSession: Swift.String
+  public let pubSession: Swift.String
+}
+public struct OfferCallResult {
+  public let session: Swift.String
+  public let roomId: Swift.String
+  public let roomType: OmnitalkSdk.VIDEOROOM_TYPE
+  public let publishIdx: Swift.Int
 }
 public struct WebRTCVideoView : SwiftUI.UIViewRepresentable {
   public init(view: WebRTC.RTCMTLVideoView)
@@ -86,6 +79,65 @@ public struct WebRTCVideoView : SwiftUI.UIViewRepresentable {
   public typealias Body = Swift.Never
   public typealias Coordinator = Swift.Void
   public typealias UIViewType = @_opaqueReturnTypeOf("$s11OmnitalkSdk15WebRTCVideoViewV10makeUIView7contextQr7SwiftUI0G20RepresentableContextVyACG_tF", 0) __
+}
+public protocol OmniEventDelegate : AnyObject {
+  func onEvent(eventName: Swift.String, message: Swift.Dictionary<Swift.String, Any>)
+}
+@objc public class OmniTalk : ObjectiveC.NSObject, Foundation.URLSessionWebSocketDelegate {
+  public static let VERSION: Swift.String
+  weak public var delegate: (any OmnitalkSdk.OmniEventDelegate)?
+  public init(serviceId: Swift.String, serviceKey: Swift.String)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func createSession(userId: Swift.String?) async throws -> OmnitalkSdk.CreateSessionResult
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func createRoom(roomType: OmnitalkSdk.VIDEOROOM_TYPE, subject: Swift.String?, secret: Swift.String?) async throws -> OmnitalkSdk.CreateRoomResult
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func joinRoom(roomId: Swift.String, secret: Swift.String?, userName: Swift.String?) async throws -> OmnitalkSdk.JoinRoomResult
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func roomList(roomType: OmnitalkSdk.VIDEOROOM_TYPE) async throws -> OmnitalkSdk.RoomListResult
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func callList(callType: OmnitalkSdk.CALL_TYPE) async throws -> Swift.Array<OmnitalkSdk.Call>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func partiList(roomId: Swift.String?) async throws -> OmnitalkSdk.PartiListResult
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func publish(view: WebRTC.RTCMTLVideoView?, record: Swift.Bool?, offerCall: Swift.Bool?) async throws -> OmnitalkSdk.PublishResult
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func subscribe(publishIdx: Swift.Int, videoView: WebRTC.RTCMTLVideoView) async throws -> OmnitalkSdk.SubscribeResult
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func leave(sessionId: Swift.String?) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func offerCall(callType: OmnitalkSdk.CALL_TYPE, calleeId: Swift.String, record: Swift.Bool, callerView: WebRTC.RTCMTLVideoView?, calleeView: WebRTC.RTCMTLVideoView?) async throws -> OmnitalkSdk.OfferCallResult
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func answerCall(callerView: WebRTC.RTCMTLVideoView?, calleeView: WebRTC.RTCMTLVideoView?) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func answerCall(roomId: Swift.String, roomType: OmnitalkSdk.VIDEOROOM_TYPE, publishIdx: Swift.Int, callerView: WebRTC.RTCMTLVideoView?, calleeView: WebRTC.RTCMTLVideoView?) async throws
+  #endif
+  public func setAudioDevice(type: OmnitalkSdk.MIC_TYPE) throws
+  public func setVideoDevice(type: OmnitalkSdk.CAM_TYPE) throws
+  @objc public func urlSession(_ session: Foundation.URLSession, webSocketTask: Foundation.URLSessionWebSocketTask, didOpenWithProtocol protocol: Swift.String?)
+  @objc public func urlSession(_ session: Foundation.URLSession, webSocketTask: Foundation.URLSessionWebSocketTask, didCloseWith closeCode: Foundation.URLSessionWebSocketTask.CloseCode, reason: Foundation.Data?)
+  @objc deinit
+}
+public struct Call : Swift.Decodable, Swift.Hashable {
+  public var state: OmnitalkSdk.CALL_STATE
+  public var userId: Swift.String
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: OmnitalkSdk.Call, b: OmnitalkSdk.Call) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct Room : Swift.Decodable, Swift.Hashable {
   public var subject: Swift.String
@@ -106,12 +158,61 @@ public struct Room : Swift.Decodable, Swift.Hashable {
 }
 public struct Participant : Swift.Decodable {
   public var session: Swift.String
-  public var callType: Swift.String
+  public var callType: OmnitalkSdk.CALL_TYPE
   public var mute: Swift.Bool
   public var publishIdx: Swift.Int
   public var userId: Swift.String
   public var userName: Swift.String
   public init(from decoder: any Swift.Decoder) throws
+}
+extension WebRTC.RTCIceConnectionState : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension WebRTC.RTCSignalingState : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension WebRTC.RTCIceGatheringState : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public enum OmniTalkError : Swift.Error {
+  case defaultError(Swift.String)
+  case invalidState(Swift.String)
+  case timeoutError(Swift.String)
+}
+public enum VIDEOROOM_TYPE : Swift.String, Swift.Codable {
+  case AUDIO_CALL
+  case VIDEO_CALL
+  case AUDIO_ROOM
+  case VIDEO_ROOM
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum CALL_TYPE : Swift.String, Swift.Codable {
+  case AUDIO_CALL
+  case VIDEO_CALL
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum CALL_STATE : Swift.String, Swift.Codable {
+  case active
+  case busy
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 public enum MIC_TYPE {
   case defaultInEar
@@ -131,52 +232,27 @@ public enum CAM_TYPE {
     get
   }
 }
-public enum CALL_TYPE {
+public enum CALL_REQUEST_TYPE {
   case publisher
   case subscriber
-  public static func == (a: OmnitalkSdk.CALL_TYPE, b: OmnitalkSdk.CALL_TYPE) -> Swift.Bool
+  public static func == (a: OmnitalkSdk.CALL_REQUEST_TYPE, b: OmnitalkSdk.CALL_REQUEST_TYPE) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
-extension WebRTC.RTCIceConnectionState : Swift.CustomStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-}
-extension WebRTC.RTCSignalingState : Swift.CustomStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-}
-extension WebRTC.RTCIceGatheringState : Swift.CustomStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-}
-public enum VIDEOROOM_TYPE : Swift.String, Swift.Codable {
-  case AUDIO_CALL
-  case VIDEO_CALL
-  case AUDIO_ROOM
-  case VIDEO_ROOM
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum OmniTalkError : Swift.Error {
-  case defaultError(Swift.String)
-  case invalidState(Swift.String)
-  case timeoutError(Swift.String)
-}
+extension OmnitalkSdk.VIDEOROOM_TYPE : Swift.Equatable {}
+extension OmnitalkSdk.VIDEOROOM_TYPE : Swift.Hashable {}
+extension OmnitalkSdk.VIDEOROOM_TYPE : Swift.RawRepresentable {}
+extension OmnitalkSdk.CALL_TYPE : Swift.Equatable {}
+extension OmnitalkSdk.CALL_TYPE : Swift.Hashable {}
+extension OmnitalkSdk.CALL_TYPE : Swift.RawRepresentable {}
+extension OmnitalkSdk.CALL_STATE : Swift.Equatable {}
+extension OmnitalkSdk.CALL_STATE : Swift.Hashable {}
+extension OmnitalkSdk.CALL_STATE : Swift.RawRepresentable {}
 extension OmnitalkSdk.MIC_TYPE : Swift.Equatable {}
 extension OmnitalkSdk.MIC_TYPE : Swift.Hashable {}
 extension OmnitalkSdk.CAM_TYPE : Swift.Equatable {}
 extension OmnitalkSdk.CAM_TYPE : Swift.Hashable {}
-extension OmnitalkSdk.CALL_TYPE : Swift.Equatable {}
-extension OmnitalkSdk.CALL_TYPE : Swift.Hashable {}
-extension OmnitalkSdk.VIDEOROOM_TYPE : Swift.Equatable {}
-extension OmnitalkSdk.VIDEOROOM_TYPE : Swift.Hashable {}
-extension OmnitalkSdk.VIDEOROOM_TYPE : Swift.RawRepresentable {}
+extension OmnitalkSdk.CALL_REQUEST_TYPE : Swift.Equatable {}
+extension OmnitalkSdk.CALL_REQUEST_TYPE : Swift.Hashable {}
