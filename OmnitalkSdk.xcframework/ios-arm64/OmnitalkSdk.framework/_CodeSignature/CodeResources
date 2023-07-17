@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/OmnitalkSdk-Swift.h</key>
 		<data>
-		uSUNO3ZRdr6Smg2xswDuJzVj7Ls=
+		2HmyEBlbkj1ZSLlFEjnuB17tAOw=
 		</data>
 		<key>Headers/OmnitalkSdk.h</key>
 		<data>
@@ -18,23 +18,23 @@
 		</data>
 		<key>Modules/OmnitalkSdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		sMazqjHvwlla4cM+R/veVKG0B2w=
+		iFxXpA4eI6LCb0rmZT3D6cOQ4cw=
 		</data>
 		<key>Modules/OmnitalkSdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		vauPkKI9rYS0JPMV1eMA1S+aL+s=
+		xsjtKIEjPRmOB9cQn5bfyyJUXBc=
 		</data>
 		<key>Modules/OmnitalkSdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		7DlfKfh+sdIyNhElRHklBdZQ66c=
+		VgZ3UzPBfuFRKwOEoKNoqWayeHk=
 		</data>
 		<key>Modules/OmnitalkSdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		vauPkKI9rYS0JPMV1eMA1S+aL+s=
+		xsjtKIEjPRmOB9cQn5bfyyJUXBc=
 		</data>
 		<key>Modules/OmnitalkSdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		A7vtEgEHhwUStHgJqoWUWZOV030=
+		e+k3GMnv0dzLJ8x1S4xXYmzQcoA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fKePF0E2vY93QH5o0dBPETneatJ6zH9KiuKkcCcHIBU=
+			uBorbOQeeyzlrjg4hm6dPr54//ezqlPqgQXLW2mhBho=
 			</data>
 		</dict>
 		<key>Headers/OmnitalkSdk.h</key>
@@ -61,35 +61,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VTWwnSnTBrdt9bL5qkrAwHLfzUj/9J2K3Y9dTSJU0B8=
+			ke/cIbClEn7gtuMlKz3Xl3ElsGbySCeJjoI59svA89I=
 			</data>
 		</dict>
 		<key>Modules/OmnitalkSdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HjB5/gIT/Xwe3pZzujojRpO05ntnBEnFcDvrmyYQzPI=
+			nEuA9VP8c9+Wmp2fl3gTA9fA/fl//uj4D4xGOjxnUbo=
 			</data>
 		</dict>
 		<key>Modules/OmnitalkSdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zcde+AmRtpQ6SQPIdGWjnu2VKoLMIPHb6oDpjqU+SPQ=
+			2ywDtx2eqhfqfPHwiII+Cg06FTrfTMKAcvR3HP5uI2k=
 			</data>
 		</dict>
 		<key>Modules/OmnitalkSdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HjB5/gIT/Xwe3pZzujojRpO05ntnBEnFcDvrmyYQzPI=
+			nEuA9VP8c9+Wmp2fl3gTA9fA/fl//uj4D4xGOjxnUbo=
 			</data>
 		</dict>
 		<key>Modules/OmnitalkSdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			89QGpIPpPxJIRKxEuOn883VpPPfkNx5V4Ks9MXxmQLU=
+			fotfu7K+v58i5i1tzaHILv/2fL54LufrK2QWvAvMWVg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
