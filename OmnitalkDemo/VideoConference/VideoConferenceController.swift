@@ -103,7 +103,7 @@ class VideoConferenceController: ObservableObject, OmniEventDelegate {
 
     func leave() async {
         do {
-            try await sdk?.leave(session: self.mySession!)
+            try await sdk?.leave()
         } catch {
             print("error on leave, \(error)")
         }

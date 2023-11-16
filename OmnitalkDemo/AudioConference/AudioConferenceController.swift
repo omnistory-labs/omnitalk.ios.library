@@ -132,7 +132,7 @@ class AudioConferenceController: ObservableObject, OmniEventDelegate {
     
     func leave() async {
         do {
-            try await sdk?.leave(session: self.mySession) // default: 자기 자신 퇴장
+            try await sdk?.leave() // default: 자기 자신 퇴장
         } catch {
             print("error on leave, \(error)")
         }

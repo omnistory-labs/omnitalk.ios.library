@@ -57,7 +57,7 @@ class AudioCallController: ObservableObject, OmniEventDelegate {
     
     func leave() async {
         do {
-            try await sdk?.leave(session: self.mySession) // default: 자기 자신 퇴장
+            try await sdk?.leave() // default: 자기 자신 퇴장
         } catch {
             print("error on leave, \(error)")
         }
@@ -65,7 +65,7 @@ class AudioCallController: ObservableObject, OmniEventDelegate {
     
     func audioOfferCall(calleeId: String) async throws {
         do {
-            _ = try await sdk?.offerCall(callType: .AUDIO_CALL, callee: calleeId, record: true, localView: nil, remoteView: nil)
+            _ = try await sdk?.offerCall(callType: .AUDIO_CALL, callee: calleeId, localView: nil, remoteView: nil)
         } catch {
             print("error on offerCall \(error)")
             throw error
