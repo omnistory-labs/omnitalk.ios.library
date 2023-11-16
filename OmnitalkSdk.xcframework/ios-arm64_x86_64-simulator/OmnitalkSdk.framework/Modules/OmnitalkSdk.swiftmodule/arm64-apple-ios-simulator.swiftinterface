@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OmnitalkSdk
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -11,6 +11,7 @@ import SwiftUI
 import WebRTC
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public protocol OmniEventDelegate : AnyObject {
   func onEvent(eventName: OmnitalkSdk.OmniEvent, message: Any)
   func onClose()
@@ -60,7 +61,7 @@ public protocol OmniEventDelegate : AnyObject {
   public func unsubscribe(publisherSession: Swift.String) async throws -> OmnitalkSdk.UnsubscribeResult
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func offerCall(callType: OmnitalkSdk.CALL_TYPE, callee: Swift.String, record: Swift.Bool?, localView: WebRTC.RTCMTLVideoView?, remoteView: WebRTC.RTCMTLVideoView?) async throws
+  public func offerCall(callType: OmnitalkSdk.CALL_TYPE, callee: Swift.String, localView: WebRTC.RTCMTLVideoView?, remoteView: WebRTC.RTCMTLVideoView?) async throws
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func answerCall(localView: WebRTC.RTCMTLVideoView?, remoteView: WebRTC.RTCMTLVideoView?) async throws
@@ -90,7 +91,16 @@ public protocol OmniEventDelegate : AnyObject {
   public func messageList() async throws -> OmnitalkSdk.MessageListResult
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func leave(session: Swift.String?) async throws
+  public func leave() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func kickOut(target: Swift.String) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func recordingStart() async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func recordingStop() async throws
   #endif
   @objc deinit
 }
@@ -246,6 +256,15 @@ public enum TRACK_TYPE : Swift.String, Swift.Codable {
     get
   }
 }
+public enum TRACK_TYPE_INT : Swift.Int, Swift.Codable {
+  case AUDIO
+  case VIDEO
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public enum VIDEOROOM_TYPE : Swift.String, Swift.Codable {
   case AUDIO_CALL
   case VIDEO_CALL
@@ -327,6 +346,7 @@ public enum OmniEvent : Swift.String {
   case ACCEPT_EVENT
   case REJECT_EVENT
   case REPORT_EVENT
+  case KICKOUT_EVENT
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -336,6 +356,12 @@ public enum OmniEvent : Swift.String {
 public struct EventLeave {
   public let cmd: OmnitalkSdk.OmniEvent
   public let session: Swift.String
+}
+public struct EventKickOut {
+  public let cmd: OmnitalkSdk.OmniEvent
+  public let session: Swift.String
+  public let roomType: OmnitalkSdk.VIDEOROOM_TYPE
+  public let callType: OmnitalkSdk.CALL_TYPE
 }
 public struct EventBroadcast {
   public let cmd: OmnitalkSdk.OmniEvent
@@ -406,6 +432,9 @@ extension OmnitalkSdk.CALL_TYPE : Swift.RawRepresentable {}
 extension OmnitalkSdk.TRACK_TYPE : Swift.Equatable {}
 extension OmnitalkSdk.TRACK_TYPE : Swift.Hashable {}
 extension OmnitalkSdk.TRACK_TYPE : Swift.RawRepresentable {}
+extension OmnitalkSdk.TRACK_TYPE_INT : Swift.Equatable {}
+extension OmnitalkSdk.TRACK_TYPE_INT : Swift.Hashable {}
+extension OmnitalkSdk.TRACK_TYPE_INT : Swift.RawRepresentable {}
 extension OmnitalkSdk.VIDEOROOM_TYPE : Swift.Equatable {}
 extension OmnitalkSdk.VIDEOROOM_TYPE : Swift.Hashable {}
 extension OmnitalkSdk.VIDEOROOM_TYPE : Swift.RawRepresentable {}

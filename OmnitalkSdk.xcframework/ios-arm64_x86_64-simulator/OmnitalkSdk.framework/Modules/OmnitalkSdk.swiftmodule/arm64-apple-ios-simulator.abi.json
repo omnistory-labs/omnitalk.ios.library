@@ -941,7 +941,7 @@
           {
             "kind": "Function",
             "name": "offerCall",
-            "printedName": "offerCall(callType:callee:record:localView:remoteView:)",
+            "printedName": "offerCall(callType:callee:localView:remoteView:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -959,20 +959,6 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Bool?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -1004,8 +990,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11OmnitalkSdk8OmniTalkC9offerCall8callType6callee6record9localView06remoteL0yAA9CALL_TYPEO_SSSbSgSo011RTCMTLVideoL0CSgAOtYaKF",
-            "mangledName": "$s11OmnitalkSdk8OmniTalkC9offerCall8callType6callee6record9localView06remoteL0yAA9CALL_TYPEO_SSSbSgSo011RTCMTLVideoL0CSgAOtYaKF",
+            "usr": "s:11OmnitalkSdk8OmniTalkC9offerCall8callType6callee9localView06remoteK0yAA9CALL_TYPEO_SSSo011RTCMTLVideoK0CSgAMtYaKF",
+            "mangledName": "$s11OmnitalkSdk8OmniTalkC9offerCall8callType6callee9localView06remoteK0yAA9CALL_TYPEO_SSSo011RTCMTLVideoK0CSgAMtYaKF",
             "moduleName": "OmnitalkSdk",
             "declAttributes": [
               "AccessControl"
@@ -1316,7 +1302,28 @@
           {
             "kind": "Function",
             "name": "leave",
-            "printedName": "leave(session:)",
+            "printedName": "leave()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11OmnitalkSdk8OmniTalkC5leaveyyYaKF",
+            "mangledName": "$s11OmnitalkSdk8OmniTalkC5leaveyyYaKF",
+            "moduleName": "OmnitalkSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "kickOut",
+            "printedName": "kickOut(target:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1325,22 +1332,56 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11OmnitalkSdk8OmniTalkC5leave7sessionySSSg_tYaKF",
-            "mangledName": "$s11OmnitalkSdk8OmniTalkC5leave7sessionySSSg_tYaKF",
+            "usr": "s:11OmnitalkSdk8OmniTalkC7kickOut6targetySS_tYaKF",
+            "mangledName": "$s11OmnitalkSdk8OmniTalkC7kickOut6targetySS_tYaKF",
+            "moduleName": "OmnitalkSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "recordingStart",
+            "printedName": "recordingStart()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11OmnitalkSdk8OmniTalkC14recordingStartyyYaKF",
+            "mangledName": "$s11OmnitalkSdk8OmniTalkC14recordingStartyyYaKF",
+            "moduleName": "OmnitalkSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "recordingStop",
+            "printedName": "recordingStop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11OmnitalkSdk8OmniTalkC13recordingStopyyYaKF",
+            "mangledName": "$s11OmnitalkSdk8OmniTalkC13recordingStopyyYaKF",
             "moduleName": "OmnitalkSdk",
             "declAttributes": [
               "AccessControl"
@@ -6669,6 +6710,219 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "TRACK_TYPE_INT",
+        "printedName": "TRACK_TYPE_INT",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "AUDIO",
+            "printedName": "AUDIO",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OmnitalkSdk.TRACK_TYPE_INT.Type) -> OmnitalkSdk.TRACK_TYPE_INT",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TRACK_TYPE_INT",
+                    "printedName": "OmnitalkSdk.TRACK_TYPE_INT",
+                    "usr": "s:11OmnitalkSdk14TRACK_TYPE_INTO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OmnitalkSdk.TRACK_TYPE_INT.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TRACK_TYPE_INT",
+                        "printedName": "OmnitalkSdk.TRACK_TYPE_INT",
+                        "usr": "s:11OmnitalkSdk14TRACK_TYPE_INTO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11OmnitalkSdk14TRACK_TYPE_INTO5AUDIOyA2CmF",
+            "mangledName": "$s11OmnitalkSdk14TRACK_TYPE_INTO5AUDIOyA2CmF",
+            "moduleName": "OmnitalkSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "VIDEO",
+            "printedName": "VIDEO",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OmnitalkSdk.TRACK_TYPE_INT.Type) -> OmnitalkSdk.TRACK_TYPE_INT",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TRACK_TYPE_INT",
+                    "printedName": "OmnitalkSdk.TRACK_TYPE_INT",
+                    "usr": "s:11OmnitalkSdk14TRACK_TYPE_INTO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OmnitalkSdk.TRACK_TYPE_INT.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TRACK_TYPE_INT",
+                        "printedName": "OmnitalkSdk.TRACK_TYPE_INT",
+                        "usr": "s:11OmnitalkSdk14TRACK_TYPE_INTO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11OmnitalkSdk14TRACK_TYPE_INTO5VIDEOyA2CmF",
+            "mangledName": "$s11OmnitalkSdk14TRACK_TYPE_INTO5VIDEOyA2CmF",
+            "moduleName": "OmnitalkSdk"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "OmnitalkSdk.TRACK_TYPE_INT?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TRACK_TYPE_INT",
+                    "printedName": "OmnitalkSdk.TRACK_TYPE_INT",
+                    "usr": "s:11OmnitalkSdk14TRACK_TYPE_INTO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11OmnitalkSdk14TRACK_TYPE_INTO8rawValueACSgSi_tcfc",
+            "mangledName": "$s11OmnitalkSdk14TRACK_TYPE_INTO8rawValueACSgSi_tcfc",
+            "moduleName": "OmnitalkSdk",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11OmnitalkSdk14TRACK_TYPE_INTO8rawValueSivp",
+            "mangledName": "$s11OmnitalkSdk14TRACK_TYPE_INTO8rawValueSivp",
+            "moduleName": "OmnitalkSdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11OmnitalkSdk14TRACK_TYPE_INTO8rawValueSivg",
+                "mangledName": "$s11OmnitalkSdk14TRACK_TYPE_INTO8rawValueSivg",
+                "moduleName": "OmnitalkSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11OmnitalkSdk14TRACK_TYPE_INTO",
+        "mangledName": "$s11OmnitalkSdk14TRACK_TYPE_INTO",
+        "moduleName": "OmnitalkSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "VIDEOROOM_TYPE",
         "printedName": "VIDEOROOM_TYPE",
         "children": [
@@ -8953,6 +9207,43 @@
             "moduleName": "OmnitalkSdk"
           },
           {
+            "kind": "Var",
+            "name": "KICKOUT_EVENT",
+            "printedName": "KICKOUT_EVENT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OmnitalkSdk.OmniEvent.Type) -> OmnitalkSdk.OmniEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniEvent",
+                    "printedName": "OmnitalkSdk.OmniEvent",
+                    "usr": "s:11OmnitalkSdk9OmniEventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OmnitalkSdk.OmniEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniEvent",
+                        "printedName": "OmnitalkSdk.OmniEvent",
+                        "usr": "s:11OmnitalkSdk9OmniEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11OmnitalkSdk9OmniEventO13KICKOUT_EVENTyA2CmF",
+            "mangledName": "$s11OmnitalkSdk9OmniEventO13KICKOUT_EVENTyA2CmF",
+            "moduleName": "OmnitalkSdk"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -9169,6 +9460,196 @@
         "declKind": "Struct",
         "usr": "s:11OmnitalkSdk10EventLeaveV",
         "mangledName": "$s11OmnitalkSdk10EventLeaveV",
+        "moduleName": "OmnitalkSdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EventKickOut",
+        "printedName": "EventKickOut",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "cmd",
+            "printedName": "cmd",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniEvent",
+                "printedName": "OmnitalkSdk.OmniEvent",
+                "usr": "s:11OmnitalkSdk9OmniEventO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11OmnitalkSdk12EventKickOutV3cmdAA04OmniC0Ovp",
+            "mangledName": "$s11OmnitalkSdk12EventKickOutV3cmdAA04OmniC0Ovp",
+            "moduleName": "OmnitalkSdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniEvent",
+                    "printedName": "OmnitalkSdk.OmniEvent",
+                    "usr": "s:11OmnitalkSdk9OmniEventO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11OmnitalkSdk12EventKickOutV3cmdAA04OmniC0Ovg",
+                "mangledName": "$s11OmnitalkSdk12EventKickOutV3cmdAA04OmniC0Ovg",
+                "moduleName": "OmnitalkSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "session",
+            "printedName": "session",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11OmnitalkSdk12EventKickOutV7sessionSSvp",
+            "mangledName": "$s11OmnitalkSdk12EventKickOutV7sessionSSvp",
+            "moduleName": "OmnitalkSdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11OmnitalkSdk12EventKickOutV7sessionSSvg",
+                "mangledName": "$s11OmnitalkSdk12EventKickOutV7sessionSSvg",
+                "moduleName": "OmnitalkSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "roomType",
+            "printedName": "roomType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VIDEOROOM_TYPE",
+                "printedName": "OmnitalkSdk.VIDEOROOM_TYPE",
+                "usr": "s:11OmnitalkSdk14VIDEOROOM_TYPEO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11OmnitalkSdk12EventKickOutV8roomTypeAA14VIDEOROOM_TYPEOvp",
+            "mangledName": "$s11OmnitalkSdk12EventKickOutV8roomTypeAA14VIDEOROOM_TYPEOvp",
+            "moduleName": "OmnitalkSdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VIDEOROOM_TYPE",
+                    "printedName": "OmnitalkSdk.VIDEOROOM_TYPE",
+                    "usr": "s:11OmnitalkSdk14VIDEOROOM_TYPEO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11OmnitalkSdk12EventKickOutV8roomTypeAA14VIDEOROOM_TYPEOvg",
+                "mangledName": "$s11OmnitalkSdk12EventKickOutV8roomTypeAA14VIDEOROOM_TYPEOvg",
+                "moduleName": "OmnitalkSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "callType",
+            "printedName": "callType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CALL_TYPE",
+                "printedName": "OmnitalkSdk.CALL_TYPE",
+                "usr": "s:11OmnitalkSdk9CALL_TYPEO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11OmnitalkSdk12EventKickOutV8callTypeAA9CALL_TYPEOvp",
+            "mangledName": "$s11OmnitalkSdk12EventKickOutV8callTypeAA9CALL_TYPEOvp",
+            "moduleName": "OmnitalkSdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CALL_TYPE",
+                    "printedName": "OmnitalkSdk.CALL_TYPE",
+                    "usr": "s:11OmnitalkSdk9CALL_TYPEO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11OmnitalkSdk12EventKickOutV8callTypeAA9CALL_TYPEOvg",
+                "mangledName": "$s11OmnitalkSdk12EventKickOutV8callTypeAA9CALL_TYPEOvg",
+                "moduleName": "OmnitalkSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11OmnitalkSdk12EventKickOutV",
+        "mangledName": "$s11OmnitalkSdk12EventKickOutV",
         "moduleName": "OmnitalkSdk",
         "declAttributes": [
           "AccessControl"
@@ -11655,42 +12136,98 @@
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/ClientAudio.swift",
       "kind": "Array",
-      "offset": 977,
+      "offset": 1046,
       "length": 11,
       "value": "[\"stream0\"]"
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/ClientAudio.swift",
       "kind": "StringLiteral",
-      "offset": 1636,
+      "offset": 1738,
       "length": 8,
       "value": "\"audio0\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/ClientAudio.swift",
       "kind": "IntegerLiteral",
-      "offset": 1880,
+      "offset": 1982,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/ClientAudio.swift",
       "kind": "FloatLiteral",
-      "offset": 2090,
+      "offset": 2192,
       "length": 5,
       "value": "0.001"
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/ClientAudio.swift",
       "kind": "StringLiteral",
-      "offset": 2577,
+      "offset": 2679,
       "length": 38,
       "value": "\"Error on didAddAudioStream, \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/ClientAudio.swift",
       "kind": "StringLiteral",
-      "offset": 2614,
+      "offset": 2716,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/ClientAudio.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3271,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/ClientAudio.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3308,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/ClientAudio.swift",
+      "kind": "StringLiteral",
+      "offset": 3372,
+      "length": 15,
+      "value": "\"renegotiation\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/ClientAudio.swift",
+      "kind": "StringLiteral",
+      "offset": 3932,
+      "length": 15,
+      "value": "\"DCH_ADD_TRACK\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/ClientAudio.swift",
+      "kind": "StringLiteral",
+      "offset": 4231,
+      "length": 20,
+      "value": "\"DCH_ADD_TRACK_COMP\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/ClientAudio.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4464,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/ClientAudio.swift",
+      "kind": "StringLiteral",
+      "offset": 4534,
+      "length": 42,
+      "value": "\"Error on didReceiveMessageWith, \""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/ClientAudio.swift",
+      "kind": "StringLiteral",
+      "offset": 4575,
       "length": 2,
       "value": "\"\""
     },
@@ -11790,7 +12327,7 @@
       "kind": "StringLiteral",
       "offset": 444,
       "length": 7,
-      "value": "\"2.0.1\""
+      "value": "\"2.1.0\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
@@ -11815,512 +12352,904 @@
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 970,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 1589,
+      "offset": 1627,
       "length": 24,
       "value": "\"Already sdkInit called\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 3376,
+      "offset": 3414,
       "length": 66,
       "value": "\"ERROR - failed to subscribe remote video on event noti, \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 3441,
+      "offset": 3479,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 5266,
+      "offset": 5492,
       "length": 45,
       "value": "\"ERROR - failed to emit omni event, \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 5310,
+      "offset": 5536,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 5592,
+      "offset": 6312,
+      "length": 45,
+      "value": "\"ERROR - error on response trickle, \""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 6356,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 6573,
       "length": 41,
       "value": "\"sdkInit function should be called first\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 5746,
+      "offset": 6727,
       "length": 25,
       "value": "\"Already session created\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6808,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 7058,
+      "offset": 6858,
+      "length": 18,
+      "value": "\"Too long user id\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 8163,
       "length": 61,
       "value": "\"The state that cannot make sip number, state: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 7118,
+      "offset": 8223,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8288,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 7455,
+      "offset": 8337,
+      "length": 22,
+      "value": "\"Too long call number\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8415,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 8465,
+      "length": 18,
+      "value": "\"Too long room id\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 8819,
       "length": 64,
       "value": "\"The state that cannot fetch session list, state: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 7518,
+      "offset": 8882,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 7904,
+      "offset": 9268,
       "length": 57,
       "value": "\"The state that cannot create room, state: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 7960,
+      "offset": 9324,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9383,
+      "length": 3,
+      "value": "128"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 8349,
+      "offset": 9434,
+      "length": 18,
+      "value": "\"Too long subject\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9508,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 9557,
+      "length": 17,
+      "value": "\"Too long secret\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 9962,
       "length": 58,
       "value": "\"The state that cannot destroy room, state: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 8406,
+      "offset": 10019,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10058,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 8735,
+      "offset": 10108,
+      "length": 18,
+      "value": "\"Too long room id\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 10454,
       "length": 61,
       "value": "\"The state that cannot fetch room list, state: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 8795,
+      "offset": 10514,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 9148,
+      "offset": 10867,
       "length": 55,
       "value": "\"The state that cannot join room, state: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 9202,
+      "offset": 10921,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10960,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 9833,
+      "offset": 11010,
+      "length": 18,
+      "value": "\"Too long room id\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11084,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 11133,
+      "length": 17,
+      "value": "\"Too long secret\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11210,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 11260,
+      "length": 20,
+      "value": "\"Too long user name\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 11910,
       "length": 62,
       "value": "\"The state that cannot fetch parti list, state: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 9894,
+      "offset": 11971,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12028,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 10325,
+      "offset": 12078,
+      "length": 18,
+      "value": "\"Too long room id\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 12526,
       "length": 64,
       "value": "\"The state that cannot fetch publish list, state: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 10388,
+      "offset": 12589,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12646,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 10809,
+      "offset": 12696,
+      "length": 18,
+      "value": "\"Too long room id\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 13134,
       "length": 63,
       "value": "\"The state that cannot fetch screen list, state: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 10871,
+      "offset": 13196,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13253,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 11213,
+      "offset": 13303,
+      "length": 18,
+      "value": "\"Too long room id\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 13662,
       "length": 34,
       "value": "\"Invalid request, Already started\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 11345,
+      "offset": 13794,
       "length": 53,
       "value": "\"The state that cannot publish, state: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 11397,
+      "offset": 13846,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 11526,
+      "offset": 13975,
       "length": 67,
       "value": "\"Not supported by the joined room type, \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 11592,
+      "offset": 14041,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 11783,
+      "offset": 14232,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 12142,
+      "offset": 14591,
       "length": 55,
       "value": "\"The state that cannot subscribe, state: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 12196,
+      "offset": 14645,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 12325,
+      "offset": 14774,
       "length": 67,
       "value": "\"Not supported by the joined room type, \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 12391,
+      "offset": 14840,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 12506,
+      "offset": 14955,
       "length": 38,
       "value": "\"Invalid request, subscribes exceeded\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 12656,
+      "offset": 15105,
       "length": 42,
       "value": "\"Invalid request, already exist subscribe\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 15195,
+      "length": 3,
+      "value": "128"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 13641,
+      "offset": 15246,
+      "length": 28,
+      "value": "\"Too long publisher session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 16217,
       "length": 57,
       "value": "\"The state that cannot unsubscribe, state: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 13697,
+      "offset": 16273,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16322,
+      "length": 3,
+      "value": "128"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 13850,
+      "offset": 16373,
+      "length": 28,
+      "value": "\"Too long publisher session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 16553,
       "length": 61,
       "value": "\"Invalid parameter, not found subscribe: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 13910,
+      "offset": 16613,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 14439,
+      "offset": 17127,
       "length": 56,
       "value": "\"The state that cannot offer call, state: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 14494,
+      "offset": 17182,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 14590,
+      "offset": 17278,
       "length": 42,
       "value": "\"Invalid call type parameter: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 14631,
+      "offset": 17319,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 14769,
+      "offset": 17457,
       "length": 24,
       "value": "\"Invalid view parameter\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17519,
+      "length": 3,
+      "value": "128"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 17570,
+      "length": 17,
+      "value": "\"Too long callee\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 14947,
+      "offset": 17731,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 15472,
+      "offset": 18256,
       "length": 42,
       "value": "\"Invalid call type parameter: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 15513,
+      "offset": 18297,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 15996,
+      "offset": 18780,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 16210,
+      "offset": 18994,
       "length": 57,
       "value": "\"The state that cannot answer call, state: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 16266,
+      "offset": 19050,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 16358,
+      "offset": 19142,
       "length": 32,
       "value": "\"Invalid state, no call request\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 16546,
+      "offset": 19330,
       "length": 24,
       "value": "\"Invalid view parameter\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 17251,
+      "offset": 20035,
       "length": 57,
       "value": "\"The state that cannot answer call, state: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 17307,
+      "offset": 20091,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 17449,
+      "offset": 20233,
       "length": 24,
       "value": "\"Invalid view parameter\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20295,
+      "length": 3,
+      "value": "128"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 18013,
+      "offset": 20346,
+      "length": 17,
+      "value": "\"Too long caller\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 20903,
       "length": 38,
       "value": "\"Invalid request, not found publisher\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 18201,
+      "offset": 21091,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 18368,
+      "offset": 21258,
       "length": 38,
       "value": "\"Invalid request, not found publisher\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 18558,
+      "offset": 21448,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 18728,
+      "offset": 21618,
       "length": 38,
       "value": "\"Invalid request, not found publisher\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 18984,
+      "offset": 21874,
       "length": 38,
       "value": "\"Invalid request, not found publisher\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 19346,
+      "offset": 22236,
       "length": 58,
       "value": "\"The state that cannot send message, state: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 19403,
+      "offset": 22293,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22333,
+      "length": 4,
+      "value": "2048"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 19779,
+      "offset": 22385,
+      "length": 18,
+      "value": "\"Too long message\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 22778,
       "length": 58,
       "value": "\"The state that cannot send whisper, state: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 19836,
+      "offset": 22835,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22875,
+      "length": 4,
+      "value": "2048"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 20208,
+      "offset": 22927,
+      "length": 18,
+      "value": "\"Too long message\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22983,
+      "length": 3,
+      "value": "128"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 23034,
+      "length": 17,
+      "value": "\"Too long target\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 23422,
       "length": 64,
       "value": "\"The state that cannot fetch message list, state: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 20271,
+      "offset": 23485,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 20545,
+      "offset": 23743,
       "length": 39,
       "value": "\"Invalid request, already disconnected\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 20701,
-      "length": 51,
-      "value": "\"The state that cannot leave, state: \""
+      "offset": 23979,
+      "length": 39,
+      "value": "\"Invalid request, already disconnected\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "StringLiteral",
-      "offset": 20751,
+      "offset": 24214,
+      "length": 53,
+      "value": "\"The state that cannot kickout, state: \""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 24266,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24305,
+      "length": 3,
+      "value": "128"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 24356,
+      "length": 17,
+      "value": "\"Too long target\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 24579,
+      "length": 39,
+      "value": "\"Invalid request, already disconnected\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 24814,
+      "length": 61,
+      "value": "\"The state that cannot start recording, state: \""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 24874,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
       "kind": "BooleanLiteral",
-      "offset": 21207,
+      "offset": 24920,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 24972,
+      "length": 44,
+      "value": "\"Invalid request, Already started recording\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 25136,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 25272,
+      "length": 39,
+      "value": "\"Invalid request, already disconnected\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 25507,
+      "length": 60,
+      "value": "\"The state that cannot stop recording, state: \""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 25566,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 25612,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "StringLiteral",
+      "offset": 25664,
+      "length": 40,
+      "value": "\"Invalid request, not started recording\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26129,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/OmnitalkSdk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26164,
       "length": 5,
       "value": "false"
     },
@@ -13601,1071 +14530,1316 @@
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
       "kind": "StringLiteral",
-      "offset": 6536,
+      "offset": 6562,
       "length": 8,
       "value": "\"result\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
       "kind": "StringLiteral",
-      "offset": 6564,
+      "offset": 6590,
       "length": 5,
       "value": "\"cmd\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
       "kind": "StringLiteral",
-      "offset": 6593,
+      "offset": 6619,
       "length": 9,
       "value": "\"session\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
       "kind": "StringLiteral",
-      "offset": 6625,
+      "offset": 6651,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
       "kind": "StringLiteral",
-      "offset": 6536,
+      "offset": 6682,
       "length": 8,
-      "value": "\"result\""
+      "value": "\"target\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 6564,
-      "length": 5,
-      "value": "\"cmd\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 6593,
-      "length": 9,
-      "value": "\"session\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 6625,
-      "length": 8,
-      "value": "\"reason\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 6837,
-      "length": 8,
-      "value": "\"result\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 6865,
-      "length": 5,
-      "value": "\"cmd\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 6894,
-      "length": 9,
-      "value": "\"session\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 6926,
-      "length": 8,
-      "value": "\"reason\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 6837,
-      "length": 8,
-      "value": "\"result\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 6865,
-      "length": 5,
-      "value": "\"cmd\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 6894,
-      "length": 9,
-      "value": "\"session\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 6926,
-      "length": 8,
-      "value": "\"reason\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7165,
-      "length": 8,
-      "value": "\"result\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7193,
-      "length": 5,
-      "value": "\"cmd\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7222,
-      "length": 9,
-      "value": "\"session\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7254,
-      "length": 8,
-      "value": "\"reason\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7285,
-      "length": 9,
-      "value": "\"room_id\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7165,
-      "length": 8,
-      "value": "\"result\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7193,
-      "length": 5,
-      "value": "\"cmd\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7222,
-      "length": 9,
-      "value": "\"session\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7254,
-      "length": 8,
-      "value": "\"reason\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7285,
-      "length": 9,
-      "value": "\"room_id\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7525,
-      "length": 8,
-      "value": "\"result\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7553,
-      "length": 5,
-      "value": "\"cmd\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7582,
-      "length": 9,
-      "value": "\"session\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7614,
-      "length": 8,
-      "value": "\"reason\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7645,
-      "length": 9,
-      "value": "\"room_id\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7525,
-      "length": 8,
-      "value": "\"result\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7553,
-      "length": 5,
-      "value": "\"cmd\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7582,
-      "length": 9,
-      "value": "\"session\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7614,
-      "length": 8,
-      "value": "\"reason\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7645,
-      "length": 9,
-      "value": "\"room_id\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7887,
-      "length": 8,
-      "value": "\"result\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7915,
-      "length": 5,
-      "value": "\"cmd\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7944,
-      "length": 9,
-      "value": "\"session\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7976,
-      "length": 8,
-      "value": "\"reason\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 8012,
-      "length": 13,
-      "value": "\"transaction\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7887,
-      "length": 8,
-      "value": "\"result\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7915,
-      "length": 5,
-      "value": "\"cmd\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7944,
-      "length": 9,
-      "value": "\"session\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 7976,
-      "length": 8,
-      "value": "\"reason\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 8012,
-      "length": 13,
-      "value": "\"transaction\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 8332,
-      "length": 8,
-      "value": "\"result\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 8360,
-      "length": 5,
-      "value": "\"cmd\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 8389,
-      "length": 9,
-      "value": "\"session\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 8421,
-      "length": 8,
-      "value": "\"reason\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 8457,
-      "length": 13,
-      "value": "\"transaction\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 8492,
-      "length": 7,
-      "value": "\"count\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 8520,
-      "length": 6,
-      "value": "\"page\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 8547,
-      "length": 6,
-      "value": "\"list\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 8332,
-      "length": 8,
-      "value": "\"result\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 8360,
-      "length": 5,
-      "value": "\"cmd\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 8389,
-      "length": 9,
-      "value": "\"session\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 8421,
-      "length": 8,
-      "value": "\"reason\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 8457,
-      "length": 13,
-      "value": "\"transaction\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 8492,
-      "length": 7,
-      "value": "\"count\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 8520,
-      "length": 6,
-      "value": "\"page\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
-      "kind": "StringLiteral",
-      "offset": 8547,
-      "length": 6,
-      "value": "\"list\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 321,
-      "length": 24,
-      "value": "\"wss:\/\/omnitalk.io:9090\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 517,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 980,
-      "length": 15,
-      "value": "\"WS_CONNECTION\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3316,
-      "length": 33,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3332,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3348,
-      "length": 13,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3532,
-      "length": 33,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3548,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3564,
-      "length": 13,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4689,
-      "length": 35,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4705,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 4723,
-      "length": 13,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 5014,
-      "length": 85,
-      "value": "\"ERROR - Invalid response message, failed to json decode on messageHandler, \""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 5098,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "Array",
-      "offset": 5568,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 5688,
-      "length": 5,
-      "value": "\"cmd\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 5738,
-      "length": 7,
-      "value": "\"event\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 5762,
-      "length": 7,
-      "value": "\"event\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5783,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 5978,
-      "length": 18,
-      "value": "\"WS_HEARTBEAT_REQ\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 6118,
-      "length": 9,
-      "value": "\"session\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 6157,
-      "length": 11,
-      "value": "\"timestamp\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 6358,
-      "length": 39,
-      "value": "\"Failed to send pong message, \""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
-      "kind": "StringLiteral",
-      "offset": 6396,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
       "offset": 6562,
       "length": 8,
       "value": "\"result\""
     },
     {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 6590,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 6619,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 6651,
+      "length": 8,
+      "value": "\"reason\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 6682,
+      "length": 8,
+      "value": "\"target\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 6892,
+      "length": 8,
+      "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 6920,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 6949,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 6981,
+      "length": 8,
+      "value": "\"reason\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 6892,
+      "length": 8,
+      "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 6920,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 6949,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 6981,
+      "length": 8,
+      "value": "\"reason\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7193,
+      "length": 8,
+      "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7221,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7250,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7282,
+      "length": 8,
+      "value": "\"reason\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7193,
+      "length": 8,
+      "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7221,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7250,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7282,
+      "length": 8,
+      "value": "\"reason\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7521,
+      "length": 8,
+      "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7549,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7578,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7610,
+      "length": 8,
+      "value": "\"reason\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7641,
+      "length": 9,
+      "value": "\"room_id\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7521,
+      "length": 8,
+      "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7549,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7578,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7610,
+      "length": 8,
+      "value": "\"reason\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7641,
+      "length": 9,
+      "value": "\"room_id\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7881,
+      "length": 8,
+      "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7909,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7938,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7970,
+      "length": 8,
+      "value": "\"reason\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8001,
+      "length": 9,
+      "value": "\"room_id\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7881,
+      "length": 8,
+      "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7909,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7938,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7970,
+      "length": 8,
+      "value": "\"reason\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8001,
+      "length": 9,
+      "value": "\"room_id\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8243,
+      "length": 8,
+      "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8271,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8300,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8332,
+      "length": 8,
+      "value": "\"reason\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8368,
+      "length": 13,
+      "value": "\"transaction\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8243,
+      "length": 8,
+      "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8271,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8300,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8332,
+      "length": 8,
+      "value": "\"reason\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8368,
+      "length": 13,
+      "value": "\"transaction\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8688,
+      "length": 8,
+      "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8716,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8745,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8777,
+      "length": 8,
+      "value": "\"reason\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8813,
+      "length": 13,
+      "value": "\"transaction\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8848,
+      "length": 7,
+      "value": "\"count\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8876,
+      "length": 6,
+      "value": "\"page\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8903,
+      "length": 6,
+      "value": "\"list\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8688,
+      "length": 8,
+      "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8716,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8745,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8777,
+      "length": 8,
+      "value": "\"reason\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8813,
+      "length": 13,
+      "value": "\"transaction\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8848,
+      "length": 7,
+      "value": "\"count\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8876,
+      "length": 6,
+      "value": "\"page\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8903,
+      "length": 6,
+      "value": "\"list\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9116,
+      "length": 8,
+      "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9144,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9173,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9205,
+      "length": 8,
+      "value": "\"reason\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9116,
+      "length": 8,
+      "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9144,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9173,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9205,
+      "length": 8,
+      "value": "\"reason\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9454,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9483,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9514,
+      "length": 7,
+      "value": "\"track\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9544,
+      "length": 9,
+      "value": "\"room_id\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9579,
+      "length": 11,
+      "value": "\"candidate\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9454,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9483,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9514,
+      "length": 7,
+      "value": "\"track\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9544,
+      "length": 9,
+      "value": "\"room_id\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9579,
+      "length": 11,
+      "value": "\"candidate\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9777,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9806,
+      "length": 10,
+      "value": "\"call_idx\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9837,
+      "length": 6,
+      "value": "\"jsep\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9777,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9806,
+      "length": 10,
+      "value": "\"call_idx\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/ResponseTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 9837,
+      "length": 6,
+      "value": "\"jsep\""
+    },
+    {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 6586,
+      "offset": 352,
+      "length": 26,
+      "value": "\"wss:\/\/lbs.omnitalk.io\/ws\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 550,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1013,
+      "length": 15,
+      "value": "\"WS_CONNECTION\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3349,
+      "length": 33,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3365,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3381,
+      "length": 13,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3565,
+      "length": 33,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3581,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3597,
+      "length": 13,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4722,
+      "length": 35,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4738,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4756,
+      "length": 13,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5464,
+      "length": 85,
+      "value": "\"ERROR - Invalid response message, failed to json decode on messageHandler, \""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5548,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "Array",
+      "offset": 6018,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6138,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6188,
+      "length": 7,
+      "value": "\"event\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6212,
+      "length": 7,
+      "value": "\"event\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6233,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6428,
+      "length": 18,
+      "value": "\"WS_HEARTBEAT_REQ\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6568,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6607,
+      "length": 11,
+      "value": "\"timestamp\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6808,
+      "length": 39,
+      "value": "\"Failed to send pong message, \""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6846,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6920,
+      "length": 12,
+      "value": "\"WS_TRICKLE\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7133,
+      "length": 8,
+      "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7157,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 6855,
+      "offset": 7426,
       "length": 71,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 6885,
+      "offset": 7456,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 6911,
+      "offset": 7482,
       "length": 11,
       "value": "\"subscribe\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 6925,
+      "offset": 7496,
       "length": 29,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 6953,
+      "offset": 7524,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 7097,
+      "offset": 7668,
       "length": 73,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 7127,
+      "offset": 7698,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 7153,
+      "offset": 7724,
       "length": 13,
       "value": "\"transaction\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 7169,
+      "offset": 7740,
       "length": 29,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 7197,
+      "offset": 7768,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 7362,
+      "offset": 7933,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 7534,
+      "offset": 8105,
       "length": 41,
       "value": "\"ERROR - failed to receiveData, \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 7574,
+      "offset": 8145,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 7744,
+      "offset": 8315,
       "length": 74,
       "value": "\"Unknown websocket message on receiveData, \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 7817,
+      "offset": 8388,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 8153,
+      "offset": 8724,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 12553,
+      "offset": 13124,
       "length": 43,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 12583,
+      "offset": 13154,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 12595,
+      "offset": 13166,
       "length": 40,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 13213,
+      "offset": 13784,
       "length": 45,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 13245,
+      "offset": 13816,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 13257,
+      "offset": 13828,
       "length": 42,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 15821,
+      "offset": 16688,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 16043,
+      "offset": 16910,
       "length": 43,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 16071,
+      "offset": 16938,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 16085,
+      "offset": 16952,
       "length": 38,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 16237,
+      "offset": 17104,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 17779,
+      "offset": 19012,
       "length": 46,
       "value": "\"ERROR - Invalid request on promise handler, \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 18044,
+      "offset": 19277,
       "length": 36,
       "value": "\"Failed to request, \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 18070,
+      "offset": 19303,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 18079,
+      "offset": 19312,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 18161,
+      "offset": 19394,
       "length": 44,
       "value": "\"ERROR - Invalid request on error handler, \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 18349,
+      "offset": 19582,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 18477,
+      "offset": 19710,
       "length": 37,
       "value": "\"Request timeout, key: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 18513,
+      "offset": 19746,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 18780,
+      "offset": 20013,
       "length": 15,
       "value": "\"WS_CONNECTION\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebSocket\/WebSocketManager.swift",
       "kind": "StringLiteral",
-      "offset": 18858,
+      "offset": 20091,
       "length": 15,
       "value": "\"WS_CONNECTION\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 335,
+      "offset": 344,
       "length": 11,
       "value": "\"candidate\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 774,
+      "offset": 783,
       "length": 11,
       "value": "\"candidate\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "BooleanLiteral",
-      "offset": 806,
+      "offset": 815,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1319,
+      "offset": 1328,
       "length": 76,
       "value": "\"Unknown RTCSessionDescription type: \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 1394,
+      "offset": 1403,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2057,
+      "offset": 2066,
       "length": 5,
       "value": "\"new\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2102,
+      "offset": 2111,
       "length": 10,
       "value": "\"checking\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2152,
+      "offset": 2161,
       "length": 11,
       "value": "\"connected\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2203,
+      "offset": 2212,
       "length": 11,
       "value": "\"completed\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2254,
+      "offset": 2263,
       "length": 8,
       "value": "\"failed\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2302,
+      "offset": 2311,
       "length": 14,
       "value": "\"disconnected\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2356,
+      "offset": 2365,
       "length": 8,
       "value": "\"closed\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2404,
+      "offset": 2413,
       "length": 7,
       "value": "\"count\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2451,
+      "offset": 2460,
       "length": 26,
       "value": "\"Unknown \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2476,
+      "offset": 2485,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2658,
+      "offset": 2667,
       "length": 8,
       "value": "\"stable\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2714,
+      "offset": 2723,
       "length": 16,
       "value": "\"haveLocalOffer\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2778,
+      "offset": 2787,
       "length": 19,
       "value": "\"haveLocalPrAnswer\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2845,
+      "offset": 2854,
       "length": 17,
       "value": "\"haveRemoteOffer\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2910,
+      "offset": 2919,
       "length": 20,
       "value": "\"haveRemotePrAnswer\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2978,
+      "offset": 2987,
       "length": 8,
       "value": "\"closed\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3026,
+      "offset": 3035,
       "length": 26,
       "value": "\"Unknown \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3051,
+      "offset": 3060,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3228,
+      "offset": 3237,
       "length": 5,
       "value": "\"new\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3273,
+      "offset": 3282,
       "length": 11,
       "value": "\"gathering\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3324,
+      "offset": 3333,
       "length": 10,
       "value": "\"complete\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3374,
+      "offset": 3383,
       "length": 26,
       "value": "\"Unknown \""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/WebRTCTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3399,
+      "offset": 3408,
       "length": 1,
       "value": "\"\""
     },
@@ -14686,28 +15860,28 @@
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/PeerConnectionDelegator.swift",
       "kind": "StringLiteral",
-      "offset": 1793,
+      "offset": 1788,
       "length": 90,
       "value": "\"ERROR - Failed to send trickle message on peerConnection didGenerate candidate ,\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/PeerConnectionDelegator.swift",
       "kind": "StringLiteral",
-      "offset": 1882,
+      "offset": 1877,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/PeerConnectionDelegator.swift",
       "kind": "StringLiteral",
-      "offset": 2973,
+      "offset": 2968,
       "length": 96,
       "value": "\"ERROR - Failed to send trickle complete message on peerConnection didChange newState ,\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/PeerConnectionDelegator.swift",
       "kind": "StringLiteral",
-      "offset": 3068,
+      "offset": 3063,
       "length": 2,
       "value": "\"\""
     },
@@ -15636,6 +16810,76 @@
       "value": "\"message\""
     },
     {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/EventTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 4979,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/EventTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 5008,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/EventTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 5039,
+      "length": 7,
+      "value": "\"event\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/EventTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 5071,
+      "length": 11,
+      "value": "\"room_type\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/EventTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 5107,
+      "length": 11,
+      "value": "\"call_type\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/EventTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 4979,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/EventTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 5008,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/EventTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 5039,
+      "length": 7,
+      "value": "\"event\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/EventTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 5071,
+      "length": 11,
+      "value": "\"room_type\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/EventTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 5107,
+      "length": 11,
+      "value": "\"call_type\""
+    },
+    {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
       "offset": 504,
@@ -16057,183 +17301,225 @@
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2595,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2614,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2595,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2614,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2595,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2614,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 2650,
+      "offset": 2734,
       "length": 11,
       "value": "\"audiocall\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 2684,
+      "offset": 2768,
       "length": 11,
       "value": "\"videocall\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 2718,
+      "offset": 2802,
       "length": 11,
       "value": "\"audioroom\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 2752,
+      "offset": 2836,
       "length": 11,
       "value": "\"videoroom\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 2783,
+      "offset": 2867,
       "length": 9,
       "value": "\"webinar\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 2813,
+      "offset": 2897,
       "length": 9,
       "value": "\"sipcall\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 2889,
+      "offset": 2973,
       "length": 5,
       "value": "\"all\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 2650,
+      "offset": 2734,
       "length": 11,
       "value": "\"audiocall\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 2684,
+      "offset": 2768,
       "length": 11,
       "value": "\"videocall\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 2718,
+      "offset": 2802,
       "length": 11,
       "value": "\"audioroom\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 2752,
+      "offset": 2836,
       "length": 11,
       "value": "\"videoroom\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 2783,
+      "offset": 2867,
       "length": 9,
       "value": "\"webinar\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 2813,
+      "offset": 2897,
       "length": 9,
       "value": "\"sipcall\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 2889,
+      "offset": 2973,
       "length": 5,
       "value": "\"all\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 2960,
+      "offset": 3044,
       "length": 6,
       "value": "\"send\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 2986,
+      "offset": 3070,
       "length": 9,
       "value": "\"whisper\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 3012,
+      "offset": 3096,
       "length": 6,
       "value": "\"join\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 3036,
+      "offset": 3120,
       "length": 7,
       "value": "\"leave\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 2960,
+      "offset": 3044,
       "length": 6,
       "value": "\"send\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 2986,
+      "offset": 3070,
       "length": 9,
       "value": "\"whisper\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 3012,
+      "offset": 3096,
       "length": 6,
       "value": "\"join\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 3036,
+      "offset": 3120,
       "length": 7,
       "value": "\"leave\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 3110,
+      "offset": 3194,
       "length": 8,
       "value": "\"active\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 3135,
+      "offset": 3219,
       "length": 6,
       "value": "\"busy\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 3110,
+      "offset": 3194,
       "length": 8,
       "value": "\"active\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Types.swift",
       "kind": "StringLiteral",
-      "offset": 3135,
+      "offset": 3219,
       "length": 6,
       "value": "\"busy\""
     },
@@ -17552,36 +18838,197 @@
       "offset": 7386,
       "length": 9,
       "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7573,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7602,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7634,
+      "length": 8,
+      "value": "\"target\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7573,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7602,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7634,
+      "length": 8,
+      "value": "\"target\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7866,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7895,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7927,
+      "length": 8,
+      "value": "\"action\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7957,
+      "length": 7,
+      "value": "\"track\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7866,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7895,
+      "length": 9,
+      "value": "\"session\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7927,
+      "length": 8,
+      "value": "\"action\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 7957,
+      "length": 7,
+      "value": "\"track\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8150,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8178,
+      "length": 9,
+      "value": "\"call_id\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8208,
+      "length": 6,
+      "value": "\"jsep\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8150,
+      "length": 5,
+      "value": "\"cmd\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8178,
+      "length": 9,
+      "value": "\"call_id\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/RequestTypes.swift",
+      "kind": "StringLiteral",
+      "offset": 8208,
+      "length": 6,
+      "value": "\"jsep\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/Common.swift",
       "kind": "Array",
-      "offset": 1312,
+      "offset": 1322,
       "length": 134,
       "value": "[\"stun:stun.l.google.com:19302\", \"stun:omnitalk.io\", \"turn:omnitalk.io\"]"
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/Common.swift",
       "kind": "Dictionary",
-      "offset": 2268,
+      "offset": 2322,
       "length": 64,
       "value": "[(\"OfferToReceiveAudio\", \"false\"), (\"OfferToReceiveVideo\", \"true\")]"
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/Common.swift",
       "kind": "Dictionary",
-      "offset": 2454,
+      "offset": 2508,
       "length": 64,
       "value": "[(\"OfferToReceiveAudio\", \"true\"), (\"OfferToReceiveVideo\", \"false\")]"
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/Common.swift",
       "kind": "StringLiteral",
-      "offset": 2695,
+      "offset": 2749,
       "length": 41,
       "value": "\"Failed to create video peer connnection\""
     },
     {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/Common.swift",
+      "kind": "StringLiteral",
+      "offset": 3856,
+      "length": 34,
+      "value": "\"Error on addCandidate, \""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/Common.swift",
+      "kind": "StringLiteral",
+      "offset": 3889,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/WebRTC\/Common.swift",
+      "kind": "StringLiteral",
+      "offset": 167,
+      "length": 12,
+      "value": "\"OmnitalkSdk.WebRTCCommon\""
+    },
+    {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Event.swift",
       "kind": "StringLiteral",
       "offset": 145,
@@ -17675,6 +19122,13 @@
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Event.swift",
       "kind": "StringLiteral",
+      "offset": 1024,
+      "length": 15,
+      "value": "\"KICKOUT_EVENT\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Event.swift",
+      "kind": "StringLiteral",
       "offset": 145,
       "length": 13,
       "value": "\"LEAVE_EVENT\""
@@ -17762,6 +19216,13 @@
       "offset": 984,
       "length": 14,
       "value": "\"REPORT_EVENT\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/PublicTypes\/Event.swift",
+      "kind": "StringLiteral",
+      "offset": 1024,
+      "length": 15,
+      "value": "\"KICKOUT_EVENT\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
@@ -17871,51 +19332,65 @@
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 908,
+      "offset": 903,
       "length": 20,
       "value": "\"WS_MAKE_SIPNUM_REQ\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1037,
+      "offset": 1032,
       "length": 13,
       "value": "\"WS_MUTE_REQ\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1069,
+      "offset": 1064,
       "length": 15,
       "value": "\"WS_UNMUTE_REQ\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1104,
+      "offset": 1099,
       "length": 12,
       "value": "\"WS_TRICKLE\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1233,
+      "offset": 1223,
       "length": 16,
       "value": "\"WS_MESSAGE_REQ\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1272,
+      "offset": 1257,
       "length": 14,
       "value": "\"WS_LEAVE_REQ\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1312,
+      "offset": 1297,
       "length": 18,
       "value": "\"WS_HEARTBEAT_RSP\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1336,
+      "length": 16,
+      "value": "\"WS_KICKOUT_REQ\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1374,
+      "length": 18,
+      "value": "\"WS_RECORDING_REQ\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
@@ -18025,513 +19500,611 @@
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 908,
+      "offset": 903,
       "length": 20,
       "value": "\"WS_MAKE_SIPNUM_REQ\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1037,
+      "offset": 1032,
       "length": 13,
       "value": "\"WS_MUTE_REQ\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1069,
+      "offset": 1064,
       "length": 15,
       "value": "\"WS_UNMUTE_REQ\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1104,
+      "offset": 1099,
       "length": 12,
       "value": "\"WS_TRICKLE\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1233,
+      "offset": 1223,
       "length": 16,
       "value": "\"WS_MESSAGE_REQ\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1272,
+      "offset": 1257,
       "length": 14,
       "value": "\"WS_LEAVE_REQ\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1312,
+      "offset": 1297,
       "length": 18,
       "value": "\"WS_HEARTBEAT_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1403,
+      "offset": 1336,
+      "length": 16,
+      "value": "\"WS_KICKOUT_REQ\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1374,
+      "length": 18,
+      "value": "\"WS_RECORDING_REQ\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1465,
       "length": 16,
       "value": "\"WS_SESSION_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1444,
+      "offset": 1506,
       "length": 21,
       "value": "\"WS_SESSION_LIST_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1489,
+      "offset": 1551,
       "length": 20,
       "value": "\"WS_CREATE_ROOM_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1534,
+      "offset": 1596,
       "length": 21,
       "value": "\"WS_DESTROY_ROOM_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1577,
+      "offset": 1639,
       "length": 18,
       "value": "\"WS_ROOM_LIST_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1617,
+      "offset": 1679,
       "length": 18,
       "value": "\"WS_JOIN_ROOM_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1658,
+      "offset": 1720,
       "length": 19,
       "value": "\"WS_PARTI_LIST_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1702,
+      "offset": 1764,
       "length": 21,
       "value": "\"WS_PUBLISH_LIST_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1747,
+      "offset": 1809,
       "length": 20,
       "value": "\"WS_SCREEN_LIST_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1787,
+      "offset": 1849,
       "length": 16,
       "value": "\"WS_PUBLISH_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1925,
+      "offset": 1987,
       "length": 18,
       "value": "\"WS_SUBSCRIBE_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1967,
+      "offset": 2029,
       "length": 20,
       "value": "\"WS_UNSUBSCRIBE_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2010,
+      "offset": 2072,
       "length": 19,
       "value": "\"WS_OFFER_CALL_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2053,
+      "offset": 2115,
       "length": 20,
       "value": "\"WS_ANSWER_CALL_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2102,
+      "offset": 2164,
       "length": 20,
       "value": "\"WS_MAKE_SIPNUM_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2231,
+      "offset": 2293,
       "length": 13,
       "value": "\"WS_MUTE_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2263,
+      "offset": 2325,
       "length": 15,
       "value": "\"WS_UNMUTE_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2342,
+      "offset": 2404,
       "length": 16,
       "value": "\"WS_MESSAGE_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2376,
+      "offset": 2438,
       "length": 14,
       "value": "\"WS_LEAVE_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2416,
+      "offset": 2478,
       "length": 18,
       "value": "\"WS_HEARTBEAT_REQ\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1403,
+      "offset": 2516,
+      "length": 12,
+      "value": "\"WS_TRICKLE\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 2549,
+      "length": 16,
+      "value": "\"WS_KICKOUT_RSP\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 2587,
+      "length": 18,
+      "value": "\"WS_RECORDING_RSP\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 1465,
       "length": 16,
       "value": "\"WS_SESSION_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1444,
+      "offset": 1506,
       "length": 21,
       "value": "\"WS_SESSION_LIST_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1489,
+      "offset": 1551,
       "length": 20,
       "value": "\"WS_CREATE_ROOM_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1534,
+      "offset": 1596,
       "length": 21,
       "value": "\"WS_DESTROY_ROOM_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1577,
+      "offset": 1639,
       "length": 18,
       "value": "\"WS_ROOM_LIST_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1617,
+      "offset": 1679,
       "length": 18,
       "value": "\"WS_JOIN_ROOM_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1658,
+      "offset": 1720,
       "length": 19,
       "value": "\"WS_PARTI_LIST_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1702,
+      "offset": 1764,
       "length": 21,
       "value": "\"WS_PUBLISH_LIST_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1747,
+      "offset": 1809,
       "length": 20,
       "value": "\"WS_SCREEN_LIST_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1787,
+      "offset": 1849,
       "length": 16,
       "value": "\"WS_PUBLISH_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1925,
+      "offset": 1987,
       "length": 18,
       "value": "\"WS_SUBSCRIBE_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 1967,
+      "offset": 2029,
       "length": 20,
       "value": "\"WS_UNSUBSCRIBE_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2010,
+      "offset": 2072,
       "length": 19,
       "value": "\"WS_OFFER_CALL_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2053,
+      "offset": 2115,
       "length": 20,
       "value": "\"WS_ANSWER_CALL_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2102,
+      "offset": 2164,
       "length": 20,
       "value": "\"WS_MAKE_SIPNUM_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2231,
+      "offset": 2293,
       "length": 13,
       "value": "\"WS_MUTE_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2263,
+      "offset": 2325,
       "length": 15,
       "value": "\"WS_UNMUTE_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2342,
+      "offset": 2404,
       "length": 16,
       "value": "\"WS_MESSAGE_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2376,
+      "offset": 2438,
       "length": 14,
       "value": "\"WS_LEAVE_RSP\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2416,
+      "offset": 2478,
       "length": 18,
       "value": "\"WS_HEARTBEAT_REQ\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2506,
+      "offset": 2516,
+      "length": 12,
+      "value": "\"WS_TRICKLE\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 2549,
+      "length": 16,
+      "value": "\"WS_KICKOUT_RSP\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 2587,
+      "length": 18,
+      "value": "\"WS_RECORDING_RSP\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 2677,
       "length": 15,
       "value": "\"WS_LEAVE_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2548,
+      "offset": 2719,
       "length": 19,
       "value": "\"WS_BROADCAST_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2593,
+      "offset": 2764,
       "length": 18,
       "value": "\"WS_RINGBACK_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2636,
+      "offset": 2807,
       "length": 17,
       "value": "\"WS_RINGING_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2685,
+      "offset": 2856,
       "length": 24,
       "value": "\"WS_CALL_CONNECTED_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2739,
+      "offset": 2910,
       "length": 22,
       "value": "\"WS_SCREEN_SHARE_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2793,
+      "offset": 2964,
       "length": 24,
       "value": "\"WS_SCREEN_UNSHARE_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2839,
+      "offset": 3010,
       "length": 14,
       "value": "\"WS_MUTE_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2877,
+      "offset": 3048,
       "length": 16,
       "value": "\"WS_UNMUTE_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2913,
+      "offset": 3084,
       "length": 17,
       "value": "\"WS_MESSAGE_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2506,
+      "offset": 3126,
+      "length": 17,
+      "value": "\"WS_KICKOUT_NOTI\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 2677,
       "length": 15,
       "value": "\"WS_LEAVE_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2548,
+      "offset": 2719,
       "length": 19,
       "value": "\"WS_BROADCAST_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2593,
+      "offset": 2764,
       "length": 18,
       "value": "\"WS_RINGBACK_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2636,
+      "offset": 2807,
       "length": 17,
       "value": "\"WS_RINGING_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2685,
+      "offset": 2856,
       "length": 24,
       "value": "\"WS_CALL_CONNECTED_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2739,
+      "offset": 2910,
       "length": 22,
       "value": "\"WS_SCREEN_SHARE_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2793,
+      "offset": 2964,
       "length": 24,
       "value": "\"WS_SCREEN_UNSHARE_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2839,
+      "offset": 3010,
       "length": 14,
       "value": "\"WS_MUTE_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2877,
+      "offset": 3048,
       "length": 16,
       "value": "\"WS_UNMUTE_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 2913,
+      "offset": 3084,
       "length": 17,
       "value": "\"WS_MESSAGE_NOTI\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3193,
+      "offset": 3126,
+      "length": 17,
+      "value": "\"WS_KICKOUT_NOTI\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 3406,
       "length": 6,
       "value": "\"list\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3216,
+      "offset": 3429,
       "length": 6,
       "value": "\"send\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3242,
+      "offset": 3455,
       "length": 9,
       "value": "\"whisper\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3193,
+      "offset": 3406,
       "length": 6,
       "value": "\"list\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3216,
+      "offset": 3429,
       "length": 6,
       "value": "\"send\""
     },
     {
       "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
       "kind": "StringLiteral",
-      "offset": 3242,
+      "offset": 3455,
       "length": 9,
       "value": "\"whisper\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 3543,
+      "length": 7,
+      "value": "\"start\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 3567,
+      "length": 6,
+      "value": "\"stop\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 3543,
+      "length": 7,
+      "value": "\"start\""
+    },
+    {
+      "filePath": "\/Users\/echo\/dev\/omnitalk.ios.dev\/OmnitalkSdk\/OmnitalkSdk\/Types\/Enums.swift",
+      "kind": "StringLiteral",
+      "offset": 3567,
+      "length": 6,
+      "value": "\"stop\""
     }
   ]
 }

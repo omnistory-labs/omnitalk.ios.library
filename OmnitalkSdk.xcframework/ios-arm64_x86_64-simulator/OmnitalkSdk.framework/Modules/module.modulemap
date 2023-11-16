@@ -1,7 +1,7 @@
 framework module OmnitalkSdk {
   umbrella header "OmnitalkSdk.h"
-
   export *
+
   module * { export * }
 }
 
